@@ -1,0 +1,173 @@
+{
+	"variables": [],
+	"info": {
+		"name": "chucknorris.io",
+		"_postman_id": "c00dcc70-20a4-8de9-03ac-fad5f43c15cb",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/jokes/categories (json)",
+			"request": {
+				"url": "{{base_url}}/jokes/categories",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": ": help",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Retrieve a list of available joke categories."
+			},
+			"response": []
+		},
+		{
+			"name": "/jokes/categories (text)",
+			"request": {
+				"url": "{{base_url}}/jokes/categories",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": ": help",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Retrieve a list of available joke categories."
+			},
+			"response": []
+		},
+		{
+			"name": "/jokes/random (json)",
+			"request": {
+				"url": "{{base_url}}/jokes/random?category=dev",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": ": help",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Retrieve a random chuck joke."
+			},
+			"response": []
+		},
+		{
+			"name": "/jokes/random (text)",
+			"request": {
+				"url": "{{base_url}}/jokes/random",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/plain",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": ": help",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Retrieve a random chuck joke."
+			},
+			"response": []
+		},
+		{
+			"name": "/jokes/search (json)",
+			"request": {
+				"url": "{{base_url}}/jokes/search?query=donald trump",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": ": help",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Free text search."
+			},
+			"response": []
+		},
+		{
+			"name": "/jokes/search (text)",
+			"request": {
+				"url": "{{base_url}}/jokes/search?query=donald trump",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/plain",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": ": help",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Free text search."
+			},
+			"response": []
+		}
+	]
+}
